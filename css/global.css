@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0px;
+  text-decoration: none;
+}
+
+a {
+  color: #141414;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 3ch;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao-projeto {
+  background-color: #111;
+  color: #ffffff;
+  max-width: max-content;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.botao-projeto:hover {
+  background-color: #67dd0a;
+}

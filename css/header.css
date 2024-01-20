@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 45px 60px; /* padding ref de alinhamento esquerdo */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo{
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 3rem;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+
+}
+
+.header-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-menu li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.header-menu li:hover{
+    transform: scale(1.1);
+    font-weight: 600;
+
+} 
+

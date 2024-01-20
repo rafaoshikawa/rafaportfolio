@@ -1,0 +1,19 @@
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.introducao h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+.introducao p{
+    font-size: 1.8rem;
+    color: #525252;
+    letter-spacing: 1px;
+
+}
