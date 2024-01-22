@@ -36,5 +36,18 @@ header{
     transform: scale(1.1);
     font-weight: 600;
 
-} 
+}
+
+@media (max-width: 760px){
+    .container{
+        padding: 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-menu{
+        margin-top: 30px;
+    }
+}
 

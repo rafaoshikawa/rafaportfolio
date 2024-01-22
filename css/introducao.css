@@ -17,3 +17,44 @@
     letter-spacing: 1px;
 
 }
+
+@media(max-width: 950px){
+    .rafa{
+        width: 400px;
+        margin:auto;
+    }
+
+    .introducao{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .introducao h1{
+        text-align: center;
+    }
+    .introducao p
+    {
+        text-align: center;
+    }
+ 
+}
+
+@media(max-width: 760px){
+    .rafa{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .introducao{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .tittle-intro{
+        display: grid;
+        justify-content: center;
+    }
+    
+
+}
