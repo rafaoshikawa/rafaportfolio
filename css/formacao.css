@@ -1,8 +1,14 @@
+.bg{
+  background: #141414;
+
+}
+
 .formacao {
   background: #141414;
   color: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 
 .formacao-content {
@@ -10,7 +16,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 .formacao-texto {
@@ -131,4 +136,13 @@
     grid-template-columns: 1fr;
   }
 
+  .cursos-extras:before {
+    display: none;
+
+  }
+  .idiomas:before {
+    display: none;
+  
+
 }
+ }

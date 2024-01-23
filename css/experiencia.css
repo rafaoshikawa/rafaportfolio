@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   margin: 0 auto;
-  max-width: 1200px;
   margin-bottom: 150px;
 }
 
@@ -70,6 +69,7 @@ box-shadow: -6px 9px 26px -2px rgba(0,0,0,0.75);
 
 @media (max-width:760px){
 
+
   .experiencia{
     display: grid;
     grid-template-columns: 1fr;
@@ -79,6 +79,10 @@ box-shadow: -6px 9px 26px -2px rgba(0,0,0,0.75);
 
   .subtitulo{
     display: none;
+  }
+
+  .experiencia-texto{
+    text-align: center;
   }
 
 }

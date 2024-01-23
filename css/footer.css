@@ -35,7 +35,13 @@
 .direitos {
   text-align: center;
   color: #a3a3a3;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+}
+
+.instagram:hover{
+  color: #a4f122;
 }
 
 @media (max-width: 780px) {
