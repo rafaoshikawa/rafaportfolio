@@ -83,3 +83,24 @@
     grid-column: 1/-1;
   }
 }
+
+@media (max-width: 500px) {
+  .projeto {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .projeto h3 {
+    font-size: 1.8rem;
+  }
+  .projeto p {
+    line-height: 1.8;
+  }
+  .projeto-habilidades {
+    align-items: center;
+    justify-content: center;
+  }
+  .botao-projeto {
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
