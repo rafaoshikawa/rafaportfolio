@@ -1,14 +1,16 @@
 html {
   scroll-behavior: smooth;
 }
-body, html {
-  overflow-x: hidden!important;
-  }
+body,
+html {
+  overflow-x: hidden !important;
+  background-color: #181a1b;
+}
 
 body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0px;
-  color: #141414;
+  color: #dbd8d4;
 }
 
 h1,
@@ -21,7 +23,7 @@ a {
 }
 
 a {
-  color: #141414;
+  color: #dbd8d4;
 }
 
 ul {
@@ -29,6 +31,8 @@ ul {
   padding: 0px;
   list-style: none;
 }
+
+
 
 img {
   width: 400px;

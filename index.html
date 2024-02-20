@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="./img/rafa.svg">
     <title>Rafa - Desenvolvedor e Designer</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- NavBar -->
     <header class="header container">
-        <a href="/"><h1 class="logo"> Rafa Dev</h1></a>
+        <a href="/">
+            <h1 class="logo"> Rafa Dev</h1>
+        </a>
+
+        <div class="menu-hamburguer-line">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line line3"></span>
+        </div>
+
+
         <nav aria-label="primária" class="header-menu">
             <ul>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <ul class="menu-hamburguer" style="display: flex;flex-direction: column;align-content: center;flex-wrap: wrap;">
+                <li>
+                    <img class="menu-close" src="./img/menu-close.svg" alt="" />
+                </li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -22,21 +44,22 @@
 
     <!-- Introducao -->
     <main class="introducao container">
-        <img src="./img/rafa.svg" alt="rafa" class="rafa">
-        <div class="tittle-intro">
+        <div data-aos="fade-right" data-aos-duration="2000"><img src="./img/rafa.svg" alt="rafa" class="rafa"></div>
+
+        <div data-aos="fade-left" data-aos-duration="2000" class="tittle-intro">
             <h1>Engenheiro <br>
                 FrontEnd &<br>
                 UX/UI Designer</h1>
-                <p>Localizado em São Paulo</p>
+            <p>Localizado em São Paulo</p>
         </div>
     </main>
     <!-- Experiencia -->
-    <section class="experiencia container" id="experiencia"  aria-label="Experiência">
+    <section data-aos="fade-up" data-aos-duration="1500" class="experiencia container" id="experiencia" aria-label="Experiência">
         <h2 class="subtitulo">Experiência</h2>
         <div>
-            <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong>. 
-                Estou no processo de formação como Engenheiro Frontend e implementando com cursos de <strong>Figma</strong> e  <strong>UX/UI Design</strong></p>
-            <div class="projeto">
+            <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong>.
+                Estou no processo de formação como Engenheiro Frontend e implementando com cursos de <strong>Figma</strong> e <strong>UX/UI Design</strong></p>
+            <div class="projeto" data-aos="fade-right" data-aos-duration="2000">
                 <span class="projeto-ano">2023</span>
                 <h3 class="projeto-titulo">Bikcraft</h3>
                 <span class="projeto-titulo">Tecnologias Usadas</span>
@@ -47,9 +70,39 @@
                     <li>UX Design</li>
                     <li>UI Design</li>
                 </ul>
-                <a href="https://rafaoshikawa.github.io/projetoportfolio"  target=”_blank” rel="noopener noreferer" class="botao-projeto">Conheça o Projeto</a>
+                <a href="https://rafaoshikawa.github.io/projetoportfolio" target=”_blank” rel="noopener noreferer" class="botao-projeto">Conheça o Projeto</a>
             </div>
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-right" data-aos-duration="2000">
+                <span class="projeto-ano">2024</span>
+                <h3 class="projeto-titulo">Explorar-X</h3>
+                <span class="projeto-titulo">Tecnologias Usadas</span>
+                <p class="projeto-texto">Projeto com intuito educacional utilizando HTML, CSS e bootstrap</p>
+                <ul class="projeto-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>UX Design</li>
+                    <li>UI Design</li>
+                </ul>
+                <a href="https://explorar-x.vercel.app/" target=”_blank” rel="noopener noreferer" class="botao-projeto">Conheça o Projeto</a>
+            </div>
+            <div class="projeto" data-aos="fade-right" data-aos-duration="2000">
+                <span class="projeto-ano">2024</span>
+                <h3 class="projeto-titulo">Replica Primevideo</h3>
+                <span class="projeto-titulo">Tecnologias Usadas</span>
+                <p class="projeto-texto">Criei este site com propósito educacional, empregando HTML, CSS, JavaScript
+                    e Jquery. Utilizei um carrossel de imagens implementado com o Slick e aprimorei o desenvolvimento ao pré-processar os arquivos com Gulp e Sass.
+                </p>
+                <ul class="projeto-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Jquery</li>
+                    <li>pré-processadores</li>
+                </ul>
+                <a href="https://rafaoshikawa.github.io/projetoportfolio" target=”_blank” rel="noopener noreferer" class="botao-projeto">Conheça o Projeto</a>
+            </div>
+            <div class="projeto" data-aos="fade-right" data-aos-duration="2000">
                 <span class="projeto-ano">2023</span>
                 <h3 class="projeto-titulo">Tom's Jazz School</h3>
                 <span class="projeto-titulo">Tecnologias Usadas</span>
@@ -65,68 +118,83 @@
 
 
     <!-- formação -->
-    <section class="bg" id="formacao" aria-label="Formação">
-    <div class="formacao container" >
-        <div class="formacao-content">
-        <h2 class="subtitulo">Formação</h2>
-            <div>
-            <p class="formacao-texto">Minha mais recente experiência acadêmica esta sendo<strong> Engenheiro Frontend</strong> 🎓 que estou cursando na <strong>EBAC</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online na própria plataforma.</p>
-            <ul class="faculdade-lista">
-                <li class="faculdade">
-                    <span class="faculdade-tipo">Cursando</span>
-                    <h3 class="faculdade-curso">Engenheiro Frontend</h3>
-                    <span class="faculdade-nome">EBAC</span>
-                </li>
-                <li class="faculdade">
-                    <span class="faculdade-tipo">completo</span>
-                    <h3 class="faculdade-curso">Html e Css</h3>
-                    <span class="faculdade-nome">Origamid</span>
-                </li>
-                <li class="faculdade">
-                    <span class="faculdade-tipo">Cursando</span>
-                    <h3 class="faculdade-curso">Figma</h3>
-                    <span class="faculdade-nome">EBAC</span>
-                </li>
-            </ul>
+    <section class="bg" id="formacao" aria-label="Formação" data-aos="fade-up" data-aos-duration="1500">
+        <div class="formacao container">
+            <div class="formacao-content">
+                <h2 class="subtitulo">Formação</h2>
+                <div>
+                    <p class="formacao-texto">Minha mais recente experiência acadêmica esta sendo<strong> Engenheiro Frontend</strong> 🎓 que estou cursando na <strong>EBAC</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online na própria plataforma.</p>
+                    <ul class="faculdade-lista">
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">Cursando</span>
+                            <h3 class="faculdade-curso">Engenheiro Frontend</h3>
+                            <span class="faculdade-nome">EBAC</span>
+                        </li>
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">completo</span>
+                            <h3 class="faculdade-curso">Html e Css</h3>
+                            <span class="faculdade-nome">Origamid</span>
+                        </li>
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">Cursando</span>
+                            <h3 class="faculdade-curso">Figma</h3>
+                            <span class="faculdade-nome">EBAC</span>
+                        </li>
+                    </ul>
 
-            <p class="cursos-extras">CURSOS INTENSIVOS</p>
+                    <p class="cursos-extras">Qualificações</p>
 
-        
-            <div class="cursos-intensivos">
-                <p class="curso-titulo">UX Design & UI Design</p> 
-                <div class="cursos-content">
-                    cursando
+
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">UX Design & UI Design</p>
+                        <div class="cursos-content">
+                            cursando
+                        </div>
+                    </div>
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">JavaScript and Jquery</p>
+                    </div>
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">Bootstrap</p>
+                    </div>
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">Sass, Less, GULP</p>
+                    </div>
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">Ajax</p>
+                        <div class="cursos-content">
+                            cursando
+                        </div>
+                    </div>
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">GitHub</p>
+                    </div>
+
+                    <p class="idiomas">IDIOMAS</p>
+
+
+                    <div class="cursos-intensivos">
+                        <p class="curso-titulo">Inglês <span class="fluencia">/Intermediário</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="cursos-intensivos">
-                <p class="curso-titulo">Front End para Iniciantes</p>
-                <div class="cursos-content">
-                    completo
-                </div> 
+    </section>
+    <footer class="footer-bg">
+        <div class="footer container" id="contato" aria-label="Contato">
+            <div class="footer-container">
+                <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+                <ul class="footer-contato">
+                    <li class="email">oshikawa.rafael@gmail.com</li>
+                    <li class="contato-whatsapp"><a class="contato-whatsapp" href="https://wa.link/4pv9hi" target=”_blank” rel="noopener noreferer">+55 15 99639-9497</a></li>
+                    <li><a href="https://www.instagram.com/rafaoshikawa/" class="instagram" target=”_blank” rel="noopener noreferer">@instagram</a></li>
+                </ul>
             </div>
-
-            <p class="idiomas">IDIOMAS</p>
-
-        
-            <div class="cursos-intensivos">
-                <p class="curso-titulo">Inglês <span class="fluencia">/Intermediário</span></p> 
-            </div>
+            <p class="direitos">Rafa. Alguns direitos reservados. ®</p>
         </div>
-    </div>
-</section>
-<footer class="bg">
-    <div class="footer container" id="contato" aria-label="Contato">
-        <div class="footer-container">
-            <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
-            <ul class="footer-contato">
-                <li class="email">oshikawa.rafael@gmail.com</li>
-                <li>+55 15 99639-9497</li>
-                <li><a href="https://www.instagram.com/rafaoshikawa/"  class="instagram"target=”_blank” rel="noopener noreferer" >@instagram</a></li>
-              </ul> 
-        </div >
-        <p class="direitos">Rafa. Alguns direitos reservados. ®</p>
-    </div>
-</footer>
- 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/scripts/main.js"></script>
 </body>
+
 </html>

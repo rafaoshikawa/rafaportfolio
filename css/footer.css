@@ -1,6 +1,9 @@
+.footer-bg {
+  background: #111;
+}
+
 .footer {
   padding-top: 100px;
-  background: #000;
   color: white;
 }
 
@@ -37,10 +40,11 @@
   color: #a3a3a3;
   padding-bottom: 60px;
   padding-top: 60px;
-
 }
+.contato-whatsapp:hover{
+  color: #a4f122;
 
-.instagram:hover{
+} .instagram:hover {
   color: #a4f122;
 }
 
@@ -51,10 +55,10 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .email{
+  .email {
     font-size: 1.5rem;
   }
-  .direitos{
+  .direitos {
     padding-top: 60px;
   }
 }

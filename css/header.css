@@ -1,53 +1,117 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 45px 60px; /* padding ref de alinhamento esquerdo */
-    align-items: center;
-    margin-bottom: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 45px 60px; /* padding ref de alinhamento esquerdo */
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.logo{
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 3rem;
+.logo {
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 3rem;
 }
 
-.logo:hover{
-    transform: scale(1.1);
-
+.logo:hover {
+  transform: scale(1.1);
 }
 
-.header-menu ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
+.header-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
 }
 
 .header-menu li {
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: 0.3s;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.header-menu li:hover{
-    transform: scale(1.1);
-    font-weight: 600;
-
+.header-menu li:hover {
+  transform: scale(1.1);
+  font-weight: 600;
 }
 
-@media (max-width: 760px){
-    .container{
-        padding: 0;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    .header-menu{
-        margin-top: 30px;
-    }
+/* MENU HAMBURGUER */
+.menu-hamburguer-line {
+  display: none;
+  width: 30px;
+  margin: 20px auto;
 }
 
+.menu-hamburguer-line:hover {
+  cursor: pointer;
+}
+
+.menu-hamburguer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: #181a1b;
+  align-items: start;
+  justify-content: start;
+}
+
+.menu-hamburguer li a {
+  font-size: 2rem;
+}
+
+.line {
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.line3 {
+  width: 24px;
+}
+.menu-close {
+  margin-top: 40px;
+  max-width: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 10px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .header-menu {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .header-menu ul {
+    display: none;
+  }
+  .menu-hamburguer-line {
+    display: block;
+    margin-right: 60px;
+  }
+}
