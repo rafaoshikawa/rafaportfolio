@@ -41,15 +41,18 @@
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.contato-whatsapp:hover{
-  color: #a4f122;
-
-} .instagram:hover {
+.contato-whatsapp:hover {
   color: #a4f122;
 }
-.github:hover{
-  color: #a4f122;
 
+.instagram:hover {
+  color: #a4f122;
+}
+.mail:hover {
+  color: #a4f122;
+}
+.github:hover {
+  color: #a4f122;
 }
 
 @media (max-width: 780px) {
