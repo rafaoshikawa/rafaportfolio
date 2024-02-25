@@ -8,6 +8,11 @@ header {
   margin-bottom: 30px;
 }
 
+.branding img {
+  margin: auto;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
 .logo {
   font-weight: bold;
   transition: 0.3s;

@@ -47,6 +47,10 @@
 } .instagram:hover {
   color: #a4f122;
 }
+.github:hover{
+  color: #a4f122;
+
+}
 
 @media (max-width: 780px) {
   .footer-container {
