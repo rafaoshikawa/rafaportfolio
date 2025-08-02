@@ -8,9 +8,23 @@
   background-color: #181a1b;
 }
 
-.introducao h1 {
+.dev {
   font-size: 4rem;
   letter-spacing: 2px;
+  
+}
+.ux{
+    font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+
+  
+  span{
+  color: #b4aea4;
+  font-weight: 500;
+
+  }
+
 }
 .introducao p {
   font-size: 1.8rem;
@@ -18,10 +32,11 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
   .rafa {
     width: 400px;
     margin: auto;
+    display: block;
   }
 
   .introducao {
@@ -31,6 +46,10 @@
   }
   .introducao h1 {
     text-align: center;
+
+    .dev{
+      font-size: 2rem;
+    }
   }
   .introducao p {
     text-align: center;
@@ -47,13 +66,14 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    
   }
   .tittle-intro {
     display: grid;
     justify-content: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .tittle-intro {
     padding-left: 20px;
     padding-right: 20px;
@@ -61,10 +81,11 @@
   .introducao img {
     max-width: 300px;
   }
-  .tittle-intro h1 {
-    font-size: 3rem;
+  .dev{
+    font-size: 2.4rem;
   }
+  
   .tittle-intro p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
